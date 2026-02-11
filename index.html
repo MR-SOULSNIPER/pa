@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Second-Hand Bikes Shop</title>
+  <title>Meyerton Bike Scrapyard</title>
   <style>
     /* Basic Reset */
     * {
@@ -15,13 +15,13 @@
     body {
       font-family: 'Arial', sans-serif;
       line-height: 1.6;
-      background-color: #f0f0f0;
+      background-color: #f7f7f7;
       color: #333;
     }
 
     header {
-      background-color: #2c3e50;
-      color: white;
+      background-color: #1c1c1c;
+      color: #fff;
       padding: 20px 0;
       text-align: center;
     }
@@ -56,16 +56,16 @@
     h2 {
       text-align: center;
       margin-bottom: 20px;
-      color: #2c3e50;
+      color: #1c1c1c;
     }
 
-    .bikes {
+    .spares {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
 
-    .bike-card {
+    .spare-card {
       background: white;
       border-radius: 10px;
       overflow: hidden;
@@ -73,28 +73,28 @@
       transition: transform 0.3s;
     }
 
-    .bike-card:hover {
+    .spare-card:hover {
       transform: scale(1.05);
     }
 
-    .bike-card img {
+    .spare-card img {
       width: 100%;
       height: 200px;
       object-fit: cover;
     }
 
-    .bike-card h3 {
+    .spare-card h3 {
       padding: 10px;
       color: #e74c3c;
     }
 
-    .bike-card p {
+    .spare-card p {
       padding: 0 10px 10px 10px;
       color: #555;
     }
 
     .contact {
-      background-color: #2c3e50;
+      background-color: #1c1c1c;
       color: white;
       text-align: center;
       padding: 40px 20px;
@@ -109,7 +109,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      background-color: #1a252f;
+      background-color: #111;
       color: white;
     }
 
@@ -125,26 +125,52 @@
 <body>
 
   <header>
-    <h1>Speedy Second-Hand Bikes</h1>
+    <h1>Meyerton Bike Scrapyard</h1>
     <nav>
-      <a href="#bikes">Bikes</a>
+      <a href="#spares">Spares</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section id="bikes">
-    <h2>Our Bikes</h2>
-    <div class="bikes">
-      <div class="bike-card">
-        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=400&q=80" alt="Mountain Bike">
-        <h3>Mountain Bike</h3>
-        <p>Perfect for trails and off-road adventures. Price: $150</p>
+  <section id="spares">
+    <h2>Motorbike Spares</h2>
+    <div class="spares">
+      <div class="spare-card">
+        <img src="https://images.unsplash.com/photo-1611657209991-962f39a56e64?auto=format&fit=crop&w=400&q=80" alt="Motorbike Engine">
+        <h3>Motorbike Engine</h3>
+        <p>Used engine in good condition. Price: Contact us for details.</p>
       </div>
-      <div class="bike-card">
-        <img src="https://images.unsplash.com/photo-1520975698516-13b1c35dfabc?auto=format&fit=crop&w=400&q=80" alt="City Bike">
-        <h3>City Bike</h3>
-        <p>Comfortable and stylish for your daily commute. Price: $100</p>
+      <div class="spare-card">
+        <img src="https://images.unsplash.com/photo-1594307740936-212d74e50f45?auto=format&fit=crop&w=400&q=80" alt="Brake Discs">
+        <h3>Brake Discs</h3>
+        <p>High-quality brake discs for various motorbikes. Price: Contact us.</p>
       </div>
-      <div class="bike-card">
-        <img src="https://images.uns
+      <div class="spare-card">
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=400&q=80" alt="Motorbike Tires">
+        <h3>Motorbike Tires</h3>
+        <p>Used tires with excellent grip. Price: Contact us.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p style="max-width: 800px; margin: auto; text-align: center;">
+      Meyerton Bike Scrapyard specializes in high-quality second-hand motorbike spares. We carefully inspect each part to ensure reliability and affordability. Serving Meyerton and surrounding areas.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: <a href="tel:+27815865224">081 586 5224</a></p>
+    <p>Location: Meyerton, South Africa</p>
+    <p>Email: <a href="mailto:info@meyertonbikescrapyard.co.za">info@meyertonbikescrapyard.co.za</a></p>
+  </section>
+
+  <footer>
+    &copy; 2026 Meyerton Bike Scrapyard. All rights reserved.
+  </footer>
+
+</body>
+</html>
