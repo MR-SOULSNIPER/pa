@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meyerton Bike Scrapyard</title>
   <style>
-    /* Basic Reset */
     * {
       margin: 0;
       padding: 0;
@@ -14,62 +13,64 @@
 
     body {
       font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      background-color: #f7f7f7;
+      background-color: #f4f4f4;
       color: #333;
     }
 
     header {
-      background-color: #1c1c1c;
+      background-color: #1b1b1b;
       color: #fff;
-      padding: 20px 0;
+      padding: 25px 0;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
+      margin-bottom: 10px;
     }
 
     nav {
       display: flex;
       justify-content: center;
-      gap: 20px;
-      margin-top: 10px;
+      gap: 25px;
+      flex-wrap: wrap;
     }
 
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #e74c3c;
     }
 
     section {
-      padding: 40px 20px;
-      max-width: 1000px;
+      padding: 50px 20px;
+      max-width: 1100px;
       margin: auto;
     }
 
     h2 {
       text-align: center;
-      margin-bottom: 20px;
-      color: #1c1c1c;
+      margin-bottom: 30px;
+      color: #1b1b1b;
     }
 
     .spares {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 25px;
     }
 
     .spare-card {
-      background: white;
-      border-radius: 10px;
+      background: #fff;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       transition: transform 0.3s;
     }
 
@@ -84,20 +85,32 @@
     }
 
     .spare-card h3 {
-      padding: 10px;
+      padding: 15px 10px 5px 10px;
       color: #e74c3c;
     }
 
     .spare-card p {
-      padding: 0 10px 10px 10px;
+      padding: 0 10px 15px 10px;
       color: #555;
     }
 
+    .services, .why-choose-us {
+      max-width: 900px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .services ul, .why-choose-us ul {
+      list-style-type: square;
+      padding-left: 20px;
+      margin-top: 15px;
+    }
+
     .contact {
-      background-color: #1c1c1c;
+      background-color: #1b1b1b;
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     .contact a {
@@ -113,11 +126,10 @@
       color: white;
     }
 
-    /* Responsive adjustments */
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
       }
     }
   </style>
@@ -128,44 +140,88 @@
     <h1>Meyerton Bike Scrapyard</h1>
     <nav>
       <a href="#spares">Spares</a>
+      <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- Motorbike Spares Section -->
   <section id="spares">
     <h2>Motorbike Spares</h2>
     <div class="spares">
       <div class="spare-card">
         <img src="https://images.unsplash.com/photo-1611657209991-962f39a56e64?auto=format&fit=crop&w=400&q=80" alt="Motorbike Engine">
-        <h3>Motorbike Engine</h3>
-        <p>Used engine in good condition. Price: Contact us for details.</p>
+        <h3>Engines</h3>
+        <p>Used engines for various motorbike brands. Fully tested and reliable.</p>
       </div>
       <div class="spare-card">
         <img src="https://images.unsplash.com/photo-1594307740936-212d74e50f45?auto=format&fit=crop&w=400&q=80" alt="Brake Discs">
-        <h3>Brake Discs</h3>
-        <p>High-quality brake discs for various motorbikes. Price: Contact us.</p>
+        <h3>Brakes & Discs</h3>
+        <p>High-quality brake discs, pads, and calipers for safety and performance.</p>
       </div>
       <div class="spare-card">
         <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=400&q=80" alt="Motorbike Tires">
-        <h3>Motorbike Tires</h3>
-        <p>Used tires with excellent grip. Price: Contact us.</p>
+        <h3>Tires & Wheels</h3>
+        <p>Used tires with excellent grip and wheels for multiple motorbike models.</p>
+      </div>
+      <div class="spare-card">
+        <img src="https://images.unsplash.com/photo-1611332686072-b9d74655d2c8?auto=format&fit=crop&w=400&q=80" alt="Suspension">
+        <h3>Suspension & Forks</h3>
+        <p>Front forks, shock absorbers, and suspension parts for smooth rides.</p>
+      </div>
+      <div class="spare-card">
+        <img src="https://images.unsplash.com/photo-1601594680164-4a308fc7be82?auto=format&fit=crop&w=400&q=80" alt="Lights & Electronics">
+        <h3>Lights & Electronics</h3>
+        <p>Headlights, indicators, batteries, and wiring for all types of bikes.</p>
+      </div>
+      <div class="spare-card">
+        <img src="https://images.unsplash.com/photo-1601070078871-8b2c589dcf6a?auto=format&fit=crop&w=400&q=80" alt="Body & Accessories">
+        <h3>Body Parts & Accessories</h3>
+        <p>Fenders, seats, mirrors, and other accessories to keep your bike stylish.</p>
       </div>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p style="max-width: 800px; margin: auto; text-align: center;">
-      Meyerton Bike Scrapyard specializes in high-quality second-hand motorbike spares. We carefully inspect each part to ensure reliability and affordability. Serving Meyerton and surrounding areas.
-    </p>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <ul>
+        <li>Buying and selling second-hand motorbike spares.</li>
+        <li>Testing and inspecting used parts for safety and reliability.</li>
+        <li>Providing advice on compatible parts for your motorbike.</li>
+        <li>Fast delivery and pickup options within Meyerton.</li>
+        <li>Custom orders for specific spares not in stock.</li>
+      </ul>
+    </div>
   </section>
 
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Meyerton Bike Scrapyard</h2>
+    <div class="why-choose-us">
+      <p>
+        Meyerton Bike Scrapyard is your trusted supplier for high-quality second-hand motorbike spares. We specialize in engines, brakes, tires, suspension, electronics, and accessories for all types of motorbikes. Every part is carefully tested to ensure safety and reliability.
+      </p>
+      <p>Why choose us?</p>
+      <ul>
+        <li>Wide selection of motorbike spares for different brands and models.</li>
+        <li>Affordable prices without compromising quality.</li>
+        <li>Friendly, knowledgeable staff to assist you in finding the right part.</li>
+        <li>Convenient location in Meyerton for easy pickup.</li>
+        <li>We provide honest advice and support for all motorbike enthusiasts.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <p>Phone: <a href="tel:+27815865224">081 586 5224</a></p>
     <p>Location: Meyerton, South Africa</p>
     <p>Email: <a href="mailto:info@meyertonbikescrapyard.co.za">info@meyertonbikescrapyard.co.za</a></p>
+    <p>WhatsApp: <a href="https://wa.me/27815865224" target="_blank">Chat with us</a></p>
   </section>
 
   <footer>
